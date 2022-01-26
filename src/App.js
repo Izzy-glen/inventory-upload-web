@@ -319,7 +319,7 @@ function App() {
             type="password"
             name="token"
             ref={secretCodeRef}
-            placeholder="Secret Code"
+            placeholder="Secret API Key"
             required
             onChange={handleSetToken}
           />
