@@ -261,7 +261,7 @@ function App() {
         const response = await fetch(GATEWAY_URL, {
           method: "POST",
 
-          mode: "no-cors",
+          mode: "cors",
           body: JSON.stringify(formData),
           headers: {
             // "Access-Control-Allow-Origin": "*",
