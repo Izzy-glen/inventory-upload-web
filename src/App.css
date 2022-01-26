@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #fff;
 }
 
 .App-logo {
@@ -14,25 +15,82 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+  margin-bottom: 5vh;
+}
+
+.Body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.input {
+  margin: 10px;
+  max-width: 400px;
+  width: 70vw;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+.button {
+  width: 100px;
+}
+.buttonArea {
+  display: flex;
+  width: 70vw;
+  max-width: 400px;
+  justify-content: space-around;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.uploading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.uploadingModal {
+  max-width: 70vw;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.modalHeader {
+  color: #000;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 786px) {
+  .uploadingModal {
+    width: 300px;
+    margin-left: 30%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 768px) {
+  .uploadingModal {
+    width: 70vw;
+    margin-left: 13.8%;
   }
+}
+.timeout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  margin: auto;
 }
